@@ -3,6 +3,7 @@ import { render, screen } from "@testing-library/react";
 
 import NavBar from "../components/NavBar";
 
+
 test("renders a <nav> element", () => {
   const { container } = render(<NavBar />);
 
@@ -32,3 +33,5 @@ test("renders each <a> element with the correct attributes", () => {
   expect(about).toBeInTheDocument();
   expect(about).toHaveAttribute("href", expect.stringContaining("#about"));
 });
+
+export default NavBar;
